@@ -1,0 +1,13 @@
+< config.txt | EP + UCEF Occupancy Optimization Settings | Version 5.9 | Updated 2022-10-14 | Author: Brian Woo-Shem >
+MODE: < Per simulation. occupancy, adaptive90, fixed, etc. >
+occupancy
+heatorcool: < PER Simulation. heat, cool >
+cool
+optimize: < true, false >
+false
+thermostat_code_language: <string, usually python3 or java>
+python3
+dishwasher:< true, false >
+false
+occupancy_dataset: <filename>
+Occupancy8Days.csv

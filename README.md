@@ -30,7 +30,8 @@ SuperSocket federate combines the former Controller and Socket system, enabling 
 	__occupancy\_dataset:__ is not implemented yet. All buildings default to "OccupancyAnnualHourly.csv"   
 	d. run in terminal `bash run-default.sh ../EP_Control_generated`  
 3. Make sure that config.txt, config_buildingName.txt, and OccupancyAnnualHourly.csv are in the "Deployment" folder.
-4. Launch EP sims from Windows VM. Change the port number in the `config.txt` in `Joe_ep_fmu.fmu` if needed; typically the first simulation is 6789 and the subsequent simulations are +1 each. Careful to match the order they are listed inside the UCEF config file.
+4. Use the [FMU template](https://github.com/SCU-Smart-Grid-CPS/Energy-Plus-Co-Sim-Models/releases/tag/FMU) for up to 32 simulations with consecutive port numbers. Put UCEF-compatible EP files in each numbered subfolder, and check each simulations config file. Some models are available in [EnergyPlus Co-Sim Models](https://github.com/SCU-Smart-Grid-CPS/Energy-Plus-Co-Sim-Models)
+5. Launch EP sims from Windows VM. Change the port number in the `config.txt` in `Joe_ep_fmu.fmu` if needed; typically the first simulation is 6789 and the subsequent simulations are +1 each. Careful to match the order they are listed inside the UCEF config file.
 
 
 ## Warnings

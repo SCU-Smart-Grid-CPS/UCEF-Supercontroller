@@ -6,7 +6,7 @@ Department of Mechanical Engineering,
 Smart Grid & Residential Energy Simulation Team  
 __Author__: [Brian Woo-Shem](www.brianwooshem.com)  
 __Version__: 0.20 Stable     
-__Updated__: 2022-04-28  
+__Updated__: 2023-04-28  
 
 UCEF Federation for UCEF + EnergyPlus Superscalable Simulations. Intended for use with the [EnergyPlus + UCEF Superscalable Co-Simulation Autolauncher](https://github.com/SCU-Smart-Grid-CPS/EnergyPlus-UCEF-Autolauncher) but can also be run manually as well.
 

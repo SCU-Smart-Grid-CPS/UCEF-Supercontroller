@@ -2,12 +2,13 @@
 File:           supercontroller.java
 Project:        EnergyPlus Supercontroller+socket
 Author(s):      Brian Woo-Shem
-Version:        0.20 BETA
+Version:        0.20 Stable
 Last Updated:   2022-10-28 by Brian
 Notes: Code for the optimization simulations. Should compile and run but may not have perfect results.
 Run:   Set config. Run as federation
 
 *Changelog:
+	* Performance validated. Used in income level study.
     * Handles Fixed, Adaptive, and Occupancy HVAC control modes
     * Added config files & get data
     * Merged with Hannah's Appliance Scheduler v2.2 -> upgraded to multisim arrays

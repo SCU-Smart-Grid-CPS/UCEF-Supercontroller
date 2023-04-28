@@ -1,0 +1,17 @@
+{
+  "federateTypesAllowed": [
+    "supercontroller"
+  ],
+  "expectedFederates": [
+    {
+      "federateType": "supercontroller",
+      "count": 1
+    }
+  ],
+  "lateJoinerFederates": [
+    {
+      "federateType": "supercontroller",
+      "count": 0
+    }
+  ]
+}

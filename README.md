@@ -1,9 +1,16 @@
-# EP Control Supersocket UCEF Federation
-Brian Woo-Shem   
-Version 0.20 BETA    
-Updated 2022-10-29
+# EP Control Supercontroller UCEF Federation
 
-SuperSocket federate combines the former Controller and Socket system, enabling truly scalable simulations to practically any number of EP building models. This is a work-in-progress refactoring of "Scalable Simulation" and "EnergyPlusOccOpt2Fed\_v5-6\_Stable". 100% of code has been rewritten by Brian. 
+Santa Clara University, 
+School of Engineering,
+Department of Mechanical Engineering,
+Smart Grid & Residential Energy Simulation Team  
+__Author__: [Brian Woo-Shem](www.brianwooshem.com)  
+__Version__: 0.20 Stable     
+__Updated__: 2022-04-28  
+
+UCEF Federation for UCEF + EnergyPlus Superscalable Simulations. Intended for use with the [EnergyPlus + UCEF Superscalable Co-Simulation Autolauncher](https://github.com/SCU-Smart-Grid-CPS/EnergyPlus-UCEF-Autolauncher) but can also be run manually as well.
+
+Supercontroller federate combines the former Controller and Socket system, enabling truly scalable simulations to practically any number of EP building models. This is a stable and fully tested refactoring of "Scalable Simulation" and "EnergyPlusOccOpt2Fed\_v5-6\_Stable", but remains a work-in-progress as the optimization module from the original version is not yet implemented. 100% of code has been rewritten by Brian. 
 
 ## Capabilities
 
@@ -36,8 +43,7 @@ SuperSocket federate combines the former Controller and Socket system, enabling 
 
 ## Warnings
 
-1. This has only undergone basic testing, use at your own risk!
-2. Appliance scheduler is depricated but it might work; it is safest to leave dishwasher=false in config_buildingName.txt
+1. Appliance scheduler is depricated but it might work; it is safest to leave dishwasher=false in config_buildingName.txt
 3. Optimization is not yet implemented
 4. CAREFUL with config files. There is `config.txt` AND `config_simulationName.txt` for EACH simulation
 5. `setNumSims.txt` must contain a single line with just one integer which is the number of sims

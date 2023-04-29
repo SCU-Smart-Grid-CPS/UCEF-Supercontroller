@@ -48,3 +48,25 @@ Supercontroller federate combines the former Controller and Socket system, enabl
 4. CAREFUL with config files. There is `config.txt` AND `config_simulationName.txt` for EACH simulation
 5. `setNumSims.txt` must contain a single line with just one integer which is the number of sims
 6. Suspect 2 timestep delay, one each direction from EP. Previous stable version had adaptive computed with 1 timestep delay by pulling in data from csv files instead of EP, but the feedback on indoor temperature was 2 timesteps delayed.
+
+## Code Architecture & Methodology
+
+Built using [UCEF](https://www.nist.gov/ctl/smart-connected-systems-division/iot-devices-and-infrastructures-group/ucef-universal-cps) and WebGME
+
+The federation is extremely simple, just a single Java federate called "Supercontroller"
+
+![federation](https://github.com/SCU-Smart-Grid-CPS/UCEF-Supercontroller/blob/main/WebGME_Supercontroller.png)
+
+This federate has the ability to:
+
+1. Read config files for settings for the entire set of simulations and for each individual EnergyPlus simulation
+2. Establish socket connections to each EnergyPlus simulation
+3. Track timesteps and keep all simulations in sync
+4. Each timestep, it 
+    1. gets data from each EnergyPlus simulation
+    2. for each EnergyPlus simulation, computes HVAC setpoints in Java directly or by launching a separate Python code and reading back the results
+    3. sends resulting setpoints to that EnergyPlus simulation
+
+The overall framework is shown below. The UCEF Supercontroller is the blue portion in the center.
+
+![federation](https://github.com/SCU-Smart-Grid-CPS/UCEF-Supercontroller/blob/main/UCEF_Federation_EP_Control_1.png)
